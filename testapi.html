@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Front End</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" id="input" name="prompt">
+        <button type="submit" onclick="sendRequest()">Send Request</button>
+    </form>
+    
+
+    <script>
+        async function sendRequest() {
+            const apiUrl = 'https://5a16-34-147-65-238.ngrok-free.app/'
+            const inputText= document.getElementById('input').value
+
+            
+            // .then(response => response.json())
+            try {
+                // Code to be executed
+                const response =  await fetch(apiUrl, {
+                method: 'POST',
+                mode :'cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({prompt: inputText }),
+            })
+            if (response.ok) {
+                const data = await response.json();
+                console.log('Success', data);
+            } else {
+                console.log('Error', response.statusText);
+            }
+            } catch (error) {
+                console.error('Error:', error.message);
+                // Code to handle the error
+            }
+                
+            }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-7 col-md-6 col-md-4">
+            <div class="container mt-3 mb-5">
+                <h1>Try our AI-based house designer</h1>
+            </div> 
+            <div class="container mt-5 pt-5 mb-3">
+        </div>
+        <td class="align-middle">
+            <p>Our AI-based house designer will help you to design your house in a few minutes. You just need to answer a few questions or write your prompt and our AI will design your house.</p>
+            <div class="row">
+                <div class="col-6">
+                    <div class="container ml-4">
+                        <a href="login.html">
+                        <button type="button" class="btn btn-outline-primary btn-lg">Try now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="container">
+                        <button type="button" class="btn btn-outline-secondary btn-lg">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </td>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-8">
+            <div class="container pt-4 mt-4"> 
+                
+                <img src="images/exampledesign.png" alt="designer" class="img-fluid">
+            </div>
+            
+        </div>
+    </div>
+    <div class="row mb-3 mt-3">
+        <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">Don’t know what to write? we can help you</h5>
+                <p class="card-text">We wrote options for you to help you specify your needs, you just have to answer some multiple choice questions </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Choose accuracy, choose our solution</h5>
+            <p class="card-text">Our solution is powered by a stable diffusion model that is trained especially on house designing</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Customize your design  suggestions</h5>
+            <p class="card-text">Choose one of our three options to let us help you designing your house (prompt, image, options)</p>
+        </div>
+        </div>
+</div>
+</div>
+<div class="container mt-5 mb-5">
+    <div class="mx-auto text-center"><h1>How it works</h1></div>
+</div>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Generate using text prompt
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Describe the house designing you desire with a text prompt</strong> With our text to image model it can't be simpler, you just need to write your describe it with text and wait for the magic!
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Generate using image
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Your image can help us to be more precise</strong> You have an image of your house and you want a design that matches your house? That's possible with our solution, just upload the image, we can help you generating optimizing decoration, you can write a text prompt to specify changes you exactly want.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Generate using options 
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Just choose options you want!</strong> If you don't know what to write in the text prompt, we can help you! We have set questions for you with options to choose from, just answer these questions and the house decoration will be generated for you!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

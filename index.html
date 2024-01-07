@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href ="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Generate image</title>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    </div>
+  
+    <div class="container mt-5 mr-5 ml-5">
+        <div class="mx-auto text-center">
+            <h2>Choose the type of decoration you want to generate
+
+            </h2>
+            
+            
+            <p>Choose the type of decoration you want to generate </p>
+
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <ul class="nav nav-tabs d-flex justify-content-center mt-2" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Text</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Text & Image</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Choose from options</button>
+              </li>
+      
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                  <div class="container">
+                      <div class="row">
+                          <div class="mb-3">
+                              <div class="mx-auto text-center p-2">
+                                  <h4>Generate image with text prompt</h4>
+                                </div>
+                              <div class="mt-8 form-floating mb-3">
+                                  <input type="text" id="floatingInput01" class="form-control" placeholder="Enter your prompt here">
+                                  <label for="floatingInput01">Enter your prompt here</label>
+                              </div>
+                              <div class="mx-auto text-center"> 
+                                
+                                  <button type="submit" class="btn btn-outline-primary btn-lg">Start generating</button>
+                              
+                          </div>
+                      </div>
+              </div>
+              </div>
+              </div>
+              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <div class="container">
+                      <div class="row">
+                          <div class="mb-3">
+                              <div class="mx-auto text-center p-2">
+                                  <h4>Generate image with text prompt and image </h4>
+                                </div>
+                              <div class="mt-8 form-floating mb-3">
+                                  <input type="text" id="floatingInput02" class="form-control" placeholder="Enter your prompt here">
+                                  <label for="floatingInput02">Enter your prompt here (optional)</label>
+                              </div>
+                              <div class="mb-3">
+                                  <label for="formFile" class="form-label">Select image</label>
+                                  <input class="form-control" type="file" id="formFile">
+                              </div>
+                              <div class="mx-auto text-center"> 
+  
+                                 <button class="btn btn-outline-primary btn-lg">Start generating </button>
+                                  
+                              </div>
+                              
+                          </div>
+                      </div>
+              </div>
+              </div>
+              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                  <div class="mx-auto text-center">
+                      <h4>Generate image from options</h4>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-4 col-md-6">
+                          <div class="card">
+                              <div class="card-body">
+                                  <h5 class="card-title">
+                                      Type of living room
+                                  </h5>
+                                  
+                                  <p class="card-text">Choose the type of living room you want to generate</p>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="CheckMoroccan">
+                                      <label class="form-check-label" for="CheckMoroccan">
+                                      Moroccan
+                                      </label>
+          
+                                  </div>
+                                  <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="CheckEuropean">
+                                  <label class="form-check-label" for="CheckEuropean">European</label>
+                                  </div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="CheckAsian">
+                                      <label class="form-check-label" for="CheckAsian">Asian</label>
+                                  </div>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="card">
+                              <div class="card-body">
+                                  <div class="card-title"><strong>Size of the windows</strong></div>
+                                  <div class="card-text">Choose the type of windows you want to generate</div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="CheckNoWindows">
+                                      <label class="form-check-label" for="CheckNoWindows">
+                                      No Windows
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="ChecksmallWindow">
+                                    <label class="form-check-label" for="ChecksmallWindow">Small Windows</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="CheckbigWindow">
+                                    <label class="form-check-label" for="CheckbigWindow">Big Windows</label>
+                                  
+                                  </div>
+                                  <div class="form-chek">
+                                    <input class="form-check-input" type="checkbox" value="" id="CheckTwoOrMoreWindows">
+                                    <label class="form-check-label" for="CheckAverageWindows">Average windows</label>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title"><strong>Table</strong></div>
+                                <div class="card-text">Select the form of the table </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="CheckNoWindows">
+                                    <label class="form-check-label" for="CheckNoWindows">
+                                    No Windows
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="ChecksmallWindow">
+                                  <label class="form-check-label" for="ChecksmallWindow">Small Windows</label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="CheckbigWindow">
+                                  <label class="form-check-label" for="CheckbigWindow">Big Windows</label>
+                                
+                                </div>
+                                <div class="form-chek">
+                                  <input class="form-check-input" type="checkbox" value="" id="CheckTwoOrMoreWindows">
+                                  <label class="form-check-label" for="CheckTwoOrMoreWindows">Average windows</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+          </div>
+        </div>
+ 
+
+          </div>
+          <div class="col-4">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Generate using text prompt
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Describe the house designing you desire with a text prompt</strong> With our text to image model it can't be simpler, you just need to write your describe it with text and wait for the magic!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Generate using image
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Your image can help us to be more precise</strong> You have an image of your house and you want a design that matches your house? That's possible with our solution, just upload the image, we can help you generating optimizing decoration, you can write a text prompt to specify changes you exactly want.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Generate using options 
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Just choose options you want!</strong> If you don't know what to write in the text prompt, we can help you! We have set questions for you with options to choose from, just answer these questions and the house decoration will be generated for you!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="row mt-5 mb-5">
+      <div class="col-3">
+
+      </div>
+      <div class="col-6">
+        <div id="carouselExampleCaptions" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/house.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Customize your design  suggestions</h5>
+                <p>Choose one of our three options to let us help you designing your house (prompt, image, options)</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/accuracy.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Choose accuracy, choose our solution</h5>
+                <p>Our solution is powered by a stable diffusion model that is trained especially on house designing</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/form.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Don’t know what to write? we can help you</h5>
+                <p>We wrote options for you to help you specify your needs, you just have to answer some multiple choice questions </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-3">
+
+      </div>
+    </div>
+    
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
